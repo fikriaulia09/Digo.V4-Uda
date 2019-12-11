@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddPlaceActivity">
+
+        <TextView
+            android:id="@+id/tempat"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:text="Tempat"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_pengaturan"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/tempat"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Spinner
+            android:id="@+id/sp_kategori"
+            android:layout_width="369dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_abu"
+            android:entries="@array/kategori"
+            android:padding="20dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toStartOf="@+id/tempat"
+            app:layout_constraintTop_toBottomOf="@+id/garis_pengaturan"
+            tools:ignore="MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/sp_kotaDestinasi"
+            android:layout_width="369dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_abu"
+            android:entries="@array/kota"
+            android:padding="20dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintStart_toStartOf="@+id/sp_kategori"
+            app:layout_constraintTop_toBottomOf="@+id/sp_kategori"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/namaDestinasi"
+            android:layout_width="369dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bg_abu"
+            android:hint="Nama Tempat atau Destinasi"
+            android:paddingLeft="24dp"
+            app:layout_constraintStart_toStartOf="@+id/sp_kotaDestinasi"
+            app:layout_constraintTop_toBottomOf="@+id/sp_kotaDestinasi"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/fasilitas"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:clickable="true"
+            android:text="Fasiltias dan Akses"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/namaDestinasi"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="289dp" />
+
+        <View
+            android:id="@+id/garis_fasilitas"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/fasilitas"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <CheckBox
+            android:id="@+id/cb_rodaDua"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_abu"
+            android:text="Roda Dua"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garis_fasilitas"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_rodaEmpat"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_abu"
+            android:text="Roda Empat"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/cb_rodaDua"
+            app:layout_constraintTop_toBottomOf="@+id/garis_fasilitas"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_rIbadah"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_abu"
+            android:text="Roda Dua"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/cb_rodaEmpat"
+            app:layout_constraintTop_toBottomOf="@+id/cb_rodaEmpat"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_Rmakan"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_abu"
+            android:text="Ruang Ibadah"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="380dp" />
+
+        <CheckBox
+            android:id="@+id/cb_ToiletUmum"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/bg_abu"
+            android:text="Toilet Umum"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/cb_rodaEmpat"
+            app:layout_constraintTop_toBottomOf="@+id/cb_rodaEmpat"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_ToiletDIfabel"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_abu"
+            android:text="Toilet Difabel"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <CheckBox
+            android:id="@+id/cb_tanggaMiring"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/bg_abu"
+            android:text="Tangga Miring"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/cb_rodaEmpat"
+            app:layout_constraintTop_toBottomOf="@+id/cb_rodaEmpat"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/cb_eskalator"
+            android:layout_width="181dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_abu"
+            android:text="Eskalator"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="470dp" />
+
+        <TextView
+            android:id="@+id/petunjukArah"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:clickable="true"
+            android:text="Foto Destinasi"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/cb_eskalator"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="538dp" />
+
+        <View
+            android:id="@+id/garis_fotoDestinasi"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/petunjukArah"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/input_fotoDestinasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/button_orange"
+            android:text="Simpan"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/view_uploadFoto"
+            app:layout_constraintTop_toBottomOf="@+id/view_uploadFoto" />
+
+
+        <Button
+            android:id="@+id/btn_simpan_destinasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/bg_abu"
+            android:text="Upload Foto"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/petunjukArah"
+            app:layout_constraintTop_toBottomOf="@+id/garis_fotoDestinasi" />
+
+        <ImageView
+            android:id="@+id/view_uploadFoto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintStart_toStartOf="@+id/btn_simpan_destinasi"
+            app:layout_constraintTop_toBottomOf="@+id/btn_simpan_destinasi"
+            tools:ignore="MissingConstraints" />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/bt_check"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:text="Submit"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/sp_kotaDestinasi"-->
+        <!--        tools:ignore="MissingConstraints"-->
+        <!--        tools:layout_editor_absoluteX="0dp" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

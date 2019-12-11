@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <View
+            android:id="@+id/bg_putih"
+            android:layout_width="match_parent"
+            android:layout_height="469dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_putih"
+            app:layout_constraintTop_toBottomOf="@+id/Bio"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/foto_fikri"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/foto_fikri"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="73dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="31dp"
+            android:text="Fikri Aulia"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/foto_fikri"
+            app:layout_constraintTop_toTopOf="@+id/foto_fikri"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="243dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="4dp"
+            android:text="Kota Pariaman, Sumbar, Indonesia"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/foto_fikri"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/hp"
+            android:layout_width="243dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="4dp"
+            android:text="0852-7454-4239"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/foto_fikri"
+            app:layout_constraintTop_toBottomOf="@+id/alamat"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Bio"
+            android:layout_width="243dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="3dp"
+            android:text="Deskrips singkat tentang anda"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toEndOf="@+id/foto_fikri"
+            app:layout_constraintTop_toBottomOf="@+id/hp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tambahDestinasiBaru"
+            android:layout_width="377dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:text="Tambah Destinasi Baru                                         >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/foto_fikri"
+            app:layout_constraintTop_toTopOf="@+id/bg_putih"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/tambahDestinasiBaru"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/fav"
+            android:layout_width="374dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Favorite Anda                                                          >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/tambahDestinasiBaru"
+            app:layout_constraintTop_toBottomOf="@+id/garis_tambah"
+            tools:ignore="MissingConstraints" />
+
+        <View
+
+            android:id="@+id/garis_fav"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/fav"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/penilaianSaya"
+            android:layout_width="374dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Penilaian Saya                                                         >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/fav"
+            app:layout_constraintTop_toBottomOf="@+id/garis_fav"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_penilaian"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/penilaianSaya"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/pengaturan"
+            android:layout_width="374dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Pengaturan Akun                                                    >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/penilaianSaya"
+            app:layout_constraintTop_toBottomOf="@+id/garis_penilaian"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_pengaturan"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/pengaturan"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/bantuan"
+            android:layout_width="373dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Bantuan                                                                    >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/pengaturan"
+            app:layout_constraintTop_toBottomOf="@+id/garis_pengaturan"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_bantuan"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/bantuan"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/lapor"
+            android:layout_width="375dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Laporkan Penyalahgunaan                                   >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/bantuan"
+            app:layout_constraintTop_toBottomOf="@+id/garis_bantuan"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_lapor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/lapor"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="372dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="13dp"
+            android:clickable="true"
+            android:text="Info Aplikasi                                                            >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/lapor"
+            app:layout_constraintTop_toBottomOf="@+id/garis_lapor"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_info"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            app:layout_constraintTop_toBottomOf="@+id/info"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/keluar"
+            android:layout_width="373dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="13dp"
+            android:text="Keluar                                                                       >"
+            android:textColor="@color/abu"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@+id/info"
+            app:layout_constraintTop_toBottomOf="@+id/garis_info"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/garis_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/abu"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@+id/keluar"
+            tools:layout_editor_absoluteX="0dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
